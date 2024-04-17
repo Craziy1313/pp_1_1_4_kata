@@ -23,7 +23,7 @@ public class UserDaoJDBCImpl implements UserDao {
                     "  PRIMARY KEY (`id`))");
 
         } catch (SQLException e) {
-            throw new RuntimeException(e);
+
         }
     }
     public void dropUsersTable() {
@@ -33,7 +33,7 @@ public class UserDaoJDBCImpl implements UserDao {
             statement.executeUpdate("DROP TABLE userdatabase");
 
         } catch (SQLException e) {
-            throw new RuntimeException(e);
+
         }
     }
 
